@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100svh;
+}
+#profile-pic {
+  max-height: 100px;
+  border-radius: 0px 0px 50px 0px;
+  border: 1px solid black;
+}
+header {
+  background: rgb(97, 18, 18);
+  background: linear-gradient(
+    120deg,
+    rgba(97, 18, 18, 0) 0%,
+    rgba(202, 2, 2, 1) 50%
+  );
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(30, 30, 30);
+  font-size: 18px;
+  font-weight: 1000;
+  letter-spacing: 0.5px;
+  transition: 0.15s;
+}
+
+a:hover {
+  color: white;
+}
+
+a:visited {
+  color: rgb(30, 30, 30);
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  margin-right: 25px;
+  list-style: none;
+  column-gap: 20px;
+}
+
+main {
+  display: flex;
+  border: 1px solid black;
+}
+
+p {
+  display: flex;
+  border: 1px solid black;
+}
+
+#info {
+  display: flex;
+  border: 1px black solid;
+}
+
+#three-d {
+  display: grid;
+  border: 1px black solid;
+}
