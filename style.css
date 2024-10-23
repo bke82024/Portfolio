@@ -94,23 +94,36 @@ p {
   width: 350px;
 }
 .grid-container {
-  background: rgb(0,212,255);
-background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(2,0,36,1) 50%);
+  background: rgb(0, 212, 255);
+  background: radial-gradient(
+    circle,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(2, 0, 36, 1) 50%
+  );
   border: 1px black solid;
   width: 100%;
   display: grid;
   align-items: center;
   grid-template-rows: 3, 1fr;
-  grid-template-columns: 2, 1fr;
-  gap:10px
+  grid-template-columns: 3, 1fr;
+  gap: 10px;
 }
 
 .grid-item {
+  display: flex;
+  justify-content: center;
   background-color: blue;
-  min-height: 400px;
+  min-height: 200px;
   color: white;
   border: 1px solid black;
 }
+
+/* #video {
+  display: flex;
+  justify-content: center;
+  max-height: 200px;
+  max-width: 200px;
+} */
 
 #box1 {
   background-image: url(./assets/blackhole.png);
@@ -164,4 +177,13 @@ background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(2,0,36,1) 50%);
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
+}
+
+#box7 {
+  background-attachment: fixed;
+  background-size: cover;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
