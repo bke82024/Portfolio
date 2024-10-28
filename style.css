@@ -118,7 +118,7 @@ p {
   display: flex;
   justify-content: center;
   max-height: 200px;
-  width: fit-content;
+  width: 100%;
 }
 
 #box1 {
