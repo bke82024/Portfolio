@@ -76,6 +76,8 @@ p {
   width: 350px;
 }
 
+/* First grid */
+
 .grid-container1 {
   background: rgb(0, 212, 255);
   background: radial-gradient(
@@ -133,12 +135,11 @@ p {
 }
 
 #first-grid-item6 {
-    background-image: url(./assets/spider.png);
+  background-image: url(./assets/spider.png);
   background-size: cover;
   grid-column: 2/3;
   grid-row: 2/3;
   animation: center-image 3s;
-
 }
 
 #first-grid-item7 {
@@ -148,15 +149,18 @@ p {
   grid-row: 3/4;
 }
 
+/* Second grid */
+
 .grid-container2 {
   display: grid;
+  justify-content: center;
   border: 1px solid black;
-  grid-template-columns: repeat(3, 300px);
-  grid-auto-rows: 200px;
+  grid-template-columns: repeat(3, 20em);
+  grid-auto-rows: 20em;
   grid-template-areas:
     "first first aside"
     "first first aside"
-    "third third";
+    "third third .";
 }
 
 #second-grid-item1 {
@@ -167,6 +171,11 @@ p {
 #second-grid-item2 {
   grid-area: aside;
   background-color: green;
+  background-image: url(assets/grid.png);
+  background-size: cover;
+  color: white;
+  text-align: right;
+  letter-spacing: 2px;
 }
 
 #second-grid-item3 {
@@ -174,16 +183,15 @@ p {
   background-color: blue;
 }
 
-
 @keyframes center-image {
   0% {
     scale: 310% 310%;
   }
- 80% {
-      scale: 310% 310%;
-    }
-    
-100% {
-    scale: 100%
+  80% {
+    scale: 310% 310%;
+  }
+
+  100% {
+    scale: 100%;
   }
 }
