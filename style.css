@@ -8,20 +8,14 @@ body {
   min-height: 100svh;
   font-family: "Quantico", sans-serif;
 }
-h2 {
-  display: flex;
-  color: rgb(150, 150, 150);
-  font-size: 2rem;
-  text-align: center;
-  margin-block: 1em;
-}
+
 #profile-pic {
   max-height: 120px;
   rotate: -10deg;
 }
 header {
-  opacity: 60%;
   position: fixed;
+  opacity: 60%;
   width: 100%;
   height: auto;
   background: rgb(60, 60, 60);
@@ -37,13 +31,22 @@ nav {
 }
 
 #info {
+  position: relative;
+  margin-top: 200px;
   justify-content: center;
   text-align: center;
   align-items: center;
   color: gray;
-  margin-block: 3%;
   line-height: 1.2;
   letter-spacing: 1.5;
+}
+h2 {
+  justify-content: center;
+  display: flex;
+  color: rgb(150, 150, 150);
+  font-size: 2rem;
+  text-align: center;
+  margin-block: 1em;
 }
 main {
   display: flex;
