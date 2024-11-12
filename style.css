@@ -7,6 +7,12 @@ body {
   background-color: rgb(20, 20, 20);
   min-height: 100svh;
 }
+h2 {
+  color: rgb(150, 150, 150);
+  font-size: 2rem;
+  text-align: center;
+  margin-block: 1em;
+}
 #profile-pic {
   max-height: 100px;
   border-radius: 0px 0px 50px 0px;
