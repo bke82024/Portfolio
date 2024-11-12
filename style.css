@@ -22,6 +22,7 @@ nav {
   display: flex;
   flex-direction: row;
   width: 100%;
+  height: auto;
   justify-content: space-between;
   align-items: center;
 }
@@ -155,7 +156,7 @@ p {
   background-size: cover;
   grid-column: 2/3;
   grid-row: 2/3;
-  animation: center-image 3s;
+  animation: center-image 6s;
 }
 
 #first-grid-item7 {
@@ -213,12 +214,18 @@ p {
 @keyframes center-image {
   0% {
     scale: 310% 310%;
+    transform: translateY(-100%);
   }
   80% {
     scale: 310% 310%;
+    transform: translateY(-100);
+  }
+  95% {
+    transform: translateY(-100);
   }
 
   100% {
     scale: 100%;
+    transform: translateY(0);
   }
 }
