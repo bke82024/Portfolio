@@ -9,6 +9,7 @@ body {
   font-family: "Quantico", sans-serif;
 }
 h2 {
+  display: flex;
   color: rgb(150, 150, 150);
   font-size: 2rem;
   text-align: center;
@@ -19,6 +20,7 @@ h2 {
   rotate: -10deg;
 }
 header {
+  opacity: 60%;
   position: fixed;
   width: 100%;
   height: auto;
@@ -230,7 +232,7 @@ p {
   border-radius: 0 0 50% 50%;
 }
 
-@keyframes center-image {
+/* @keyframes center-image {
   0% {
     scale: 310% 310%;
     transform: translateY(-100%);
@@ -242,4 +244,4 @@ p {
     scale: 100%;
     transform: translateY(0);
   }
-}
+} */
