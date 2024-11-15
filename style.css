@@ -29,7 +29,6 @@ nav {
 }
 
 #home {
-  /* position: absolute; */
   max-height: 120px;
   cursor: pointer;
   transition: 0.1s;
@@ -100,6 +99,16 @@ main {
 p {
   font-size: 30px;
   width: 100%;
+}
+
+.programs {
+  display: flex;
+  justify-content: center;
+}
+
+#icon {
+  margin: 1rem;
+  width: 100px;
 }
 
 /* ------------------------------------------------------------------------------------------<First grid>------------------------------------------------------------------------------------------ */
@@ -185,6 +194,7 @@ p {
   grid-column: 3/4;
   grid-row: 3/4;
 }
+
 /* ------------------------------------------------------------------------------------------<Second grid>------------------------------------------------------------------------------------------ */
 
 .grid-container2 {
@@ -209,7 +219,7 @@ p {
 #second-grid-item2 {
   grid-area: b;
   background-color: transparent;
-  color: rgb(95, 215, 255);
+  color: rgb(122, 188, 210);
   text-align: center;
   letter-spacing: 2px;
 }
@@ -223,7 +233,7 @@ p {
 
 #second-grid-item4 {
   grid-area: d;
-  background-color: blue;
+  background-color: rgb(122, 188, 210);
   border-radius: 0 0 50% 50%;
 }
 
