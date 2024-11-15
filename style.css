@@ -29,9 +29,10 @@ nav {
 }
 
 #home {
-  position: absolute;
+  /* position: absolute; */
   max-height: 120px;
   cursor: pointer;
+  transition: 0.1s;
 }
 
 ul {
