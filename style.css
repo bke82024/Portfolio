@@ -15,9 +15,7 @@ header {
   position: fixed;
   opacity: 60%;
   width: 100%;
-  /* background: rgb(75, 75, 75);
-  border-bottom: 5px solid rgb(0, 212, 255); */
-  z-index: 5;
+  z-index: 99;
 }
 
 nav {
@@ -49,16 +47,17 @@ ul {
 }
 
 li {
+  margin-inline: 1rem;
   list-style: none;
   text-align: center;
   background-color: rgb(74, 74, 74);
-  border: 0.3rem solid rgb(0, 212, 255);
+  border: 0.5rem solid rgb(0, 212, 255);
   border-top: none;
   padding: 1rem;
   padding-bottom: 1rem;
   padding-inline: 2.5rem;
-  border-radius: 0 0 1.5rem 1.5rem;
   transition: 0.2s;
+  transform: perspective(10px) rotateX(-5deg);
 }
 
 a {
