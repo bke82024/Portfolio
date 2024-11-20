@@ -3,6 +3,10 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+/* html {
+  cursor: none;
+  pointer-events: none;
+} */
 body {
   background-color: rgb(20, 20, 20);
   min-height: 100svh;
@@ -52,7 +56,6 @@ li {
   text-align: center;
   background-color: rgb(74, 74, 74);
   border: 0.5rem solid rgb(0, 212, 255);
-  border-top: none;
   padding: 1rem;
   padding-bottom: 1rem;
   padding-inline: 2.5rem;
@@ -136,7 +139,12 @@ p {
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
-
+.image-cont {
+  background-size: cover;
+  background-color: black;
+  transition: 0.2s;
+  opacity: 0.8;
+}
 #video {
   display: flex;
   justify-content: center;
@@ -145,50 +153,38 @@ p {
 
 #first-grid-item1 {
   background-image: url(./assets/blackhole.png);
-  background-size: cover;
   grid-column: 1/2;
   grid-row: 1/2;
-  transition: 0.2s;
 }
 
 #first-grid-item2 {
   background-image: url(./assets/galaxy.png);
-  background-size: cover;
   grid-column: 2/3;
   grid-row: 1/2;
-  transition: 0.2s;
 }
 
 #first-grid-item3 {
   background-image: url(./assets/planet.png);
-  background-size: cover;
   grid-column: 3/4;
   grid-row: 1/2;
-  transition: 0.2s;
 }
 
 #first-grid-item4 {
   background-image: url(./assets/props.png);
-  background-size: cover;
   grid-column: 1/2;
   grid-row: 2/3;
-  transition: 0.2s;
 }
 
 #first-grid-item5 {
   background-image: url(./assets/venom31.png);
-  background-size: cover;
   grid-column: 3/4;
   grid-row: 2/3;
-  transition: 0.2s;
 }
 
 #first-grid-item6 {
   background-image: url(./assets/spider.png);
-  background-size: cover;
   grid-column: 2/3;
   grid-row: 2/3;
-  transition: 0.2s;
 }
 
 #first-grid-item7 {
@@ -255,8 +251,11 @@ p {
 /* ---------------------------------<Effects>---------------------------------- */
 
 li:hover {
-  color: white;
   padding-top: 2rem;
+}
+
+a:hover {
+  color: white;
 }
 
 a:visited {
@@ -267,11 +266,6 @@ a:visited {
   scale: 110%;
 }
 
-#first-grid-item1:hover,
-#first-grid-item2:hover,
-#first-grid-item3:hover,
-#first-grid-item4:hover,
-#first-grid-item5:hover,
-#first-grid-item6:hover {
-  transform: scale(105.5%);
+.image-cont:hover {
+  opacity: 1;
 }
