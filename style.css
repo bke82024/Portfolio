@@ -37,7 +37,7 @@ nav {
   cursor: pointer;
   transition: 0.1s;
   border: 0.3rem solid rgba(0, 212, 255, 1);
-  border-radius: 0 0 1rem;
+  border-radius: 0 0 1.5rem;
   border-top: none;
   border-left: none;
 }
@@ -55,8 +55,9 @@ li {
   border: 0.3rem solid rgb(0, 212, 255);
   border-top: none;
   padding: 1rem;
-  padding-bottom: rem;
-  border-radius: 0 0 3rem 3rem;
+  padding-bottom: 1rem;
+  padding-inline: 2.5rem;
+  border-radius: 0 0 1.5rem 1.5rem;
   transition: 0.2s;
 }
 
