@@ -3,10 +3,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-/* html {
-  cursor: none;
-  pointer-events: none;
-} */
+
 body {
   background-color: rgb(20, 20, 20);
   min-height: 100svh;
@@ -65,7 +62,6 @@ li {
 
 a {
   text-decoration: none;
-  color: rgb(30, 30, 30);
   font-weight: 1000;
   letter-spacing: 0.5px;
   transition: 0.15s;
@@ -117,11 +113,6 @@ p {
 .programs {
   display: flex;
   justify-content: center;
-}
-
-#icon {
-  margin: 1rem;
-  width: 100px;
 }
 
 /* ------------------------------------------------------------------------------------------<First grid>------------------------------------------------------------------------------------------ */
@@ -252,10 +243,6 @@ p {
 
 li:hover {
   padding-top: 2rem;
-}
-
-a:hover {
-  color: white;
 }
 
 a:visited {
